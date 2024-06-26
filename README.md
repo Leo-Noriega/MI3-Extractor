@@ -40,11 +40,22 @@
 
 ## Estructura del Proyecto
 
-- `DBConnection.py`: Descripción del archivo...
-- `GatherAll.py`: Descripción del archivo...
-- `GatherAllJsons.py`: Descripción del archivo...
-- ...
+- `DBConnection.py`: Contains the code that establishes a connection to a database
+- `GatherAll.py` & `GatherAllJsons.py`: Contains the code that retrieves all the JSON files from the SISMEDIA API
+- `GatheringDates.py`: Contains the code that retrieves the dates that are null form de database 
+- `Main.py`: Contains the code that runs the entire project
+- `RefactorJsons.py`: Contains the code that restructures the JSON file for an easy insert to the database
+- `RestructuringJsons.py`: Contains the code that restructures the JSON files with the info gathered from both the databse and the SISMEDIA API
+- `RetrieveHistoricalProfileID.py`: Contains the code that retrieves the historical profile from the SISMEDIA API
+- `RetrieveToken.py`: Contains the code that retrieves the token from the SISMEDIA API
+- `TestHistoricalProfiles.py`: *[Test only]*
+- `TestToken.py`: *[Test only]*
+- `UpdateDB.py`: Contains the code that updates the database with the new JSON file generated
+- `requirements.txt`: Archivo de dependencias
 
 ## Notas
 
-- Asegúrate de que los directorios `DataSISMEDIA` y `NullDates` estén correctamente ubicados y que los archivos JSON estén en el formato esperado.
+- The script generates the following:
+    - `DataSISMEDIA`: Contains all the JSON files retrieved from the SISMEDIA API
+    - `NullDates`: Contains all the JSON files with the dates that are null in the database
+    - `insert.json`: Contains the JSON file restructured for an easy insert to the database
