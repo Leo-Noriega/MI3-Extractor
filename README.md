@@ -1,59 +1,59 @@
-# Proyecto de Procesamiento de JSON
+# JSON Processing Project
 
-## Requisitos
+## Requirements
 
 - Python 3.x
-- `venv` para entornos virtuales
+- `venv` for virtual environments
 
-## Instalación
+## Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
     ```sh
-    git clone https://github.com/tu-usuario/tu-repositorio.git
-    cd tu-repositorio
+    git clone https://github.com/your-username/your-repository.git
+    cd your-repository
     ```
 
-2. Crea un entorno virtual:
+2. Create a virtual environment:
     ```sh
     python -m venv venv
     ```
 
-3. Activa el entorno virtual:
-    - En Windows:
+3. Activate the virtual environment:
+    - On Windows:
       ```sh
       venv\Scripts\activate
       ```
-    - En macOS y Linux:
+    - On macOS and Linux:
       ```sh
       source venv/bin/activate
       ```
 
-4. Instala las dependencias:
+4. Install the dependencies:
     ```sh
     pip install -r requirements.txt
     ```
 
-5. Ejecuta los scripts según sea necesario, por ejemplo:
+5. Run the scripts as needed, for example:
     ```sh
     python Main.py
     ```
 
-## Estructura del Proyecto
+## Project Structure
 
 - `DBConnection.py`: Contains the code that establishes a connection to a database
 - `GatherAll.py` & `GatherAllJsons.py`: Contains the code that retrieves all the JSON files from the SISMEDIA API
-- `GatheringDates.py`: Contains the code that retrieves the dates that are null form de database 
+- `GatheringDates.py`: Contains the code that retrieves the dates that are null from the database 
 - `Main.py`: Contains the code that runs the entire project
 - `RefactorJsons.py`: Contains the code that restructures the JSON file for an easy insert to the database
-- `RestructuringJsons.py`: Contains the code that restructures the JSON files with the info gathered from both the databse and the SISMEDIA API
+- `RestructuringJsons.py`: Contains the code that restructures the JSON files with the info gathered from both the database and the SISMEDIA API
 - `RetrieveHistoricalProfileID.py`: Contains the code that retrieves the historical profile from the SISMEDIA API
 - `RetrieveToken.py`: Contains the code that retrieves the token from the SISMEDIA API
 - `TestHistoricalProfiles.py`: *[Test only]*
 - `TestToken.py`: *[Test only]*
 - `UpdateDB.py`: Contains the code that updates the database with the new JSON file generated
-- `requirements.txt`: Archivo de dependencias
+- `requirements.txt`: Dependencies file
 
-## Notas
+## Notes
 
 - The script generates the following:
     - `DataSISMEDIA`: Contains all the JSON files retrieved from the SISMEDIA API
